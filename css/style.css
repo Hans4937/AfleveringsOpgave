@@ -270,13 +270,144 @@ button:hover:after {
 
 /* Aston Martin styling start */
 .astonmartin{
-  background-color: #00352f;
+  background-color: #00332d;
 }
 
+.amgridcontainer{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: minmax(100px, auto);
+  gap: 2em;
+}
 
+/*The Aston Martin intro text on top of the page*/
+.textontop{
+  grid-column: 3 / 5;
+  grid-row: 1 / 2;
+}
+.textontop > h3{
+  color: whitesmoke;
+  font-size: 24px;
+  text-align: center;
+}
+.textontop > p{
+  color: whitesmoke;
+  text-align: center;
+}
 
+/*First picture, Alonso and styling around it*/
+.amcontent1{
+  grid-column: 2 / 4;
+  grid-row: 2 / 4;
+}
+.amcontent1img{
+  width: 100%;
+  height: auto;  
+}
+.amcontent1alonso{
+  grid-column: 4 / 5;
+  grid-row: 2 / 4;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.amcontent1alonso > h4{
+  color: whitesmoke;
+  font-size: 22px;
+  margin-bottom: 0px;
+}
+.amcontent1alonso > p{
+  color: whitesmoke;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.amcontent1alonso > ul{
+  color: whitesmoke;
+  font-size: 22px;
+  line-height: 1;
+}
 
+/*Second picture, Astons Hybrid supercar styling*/
+.amcontent2{
+  grid-column: 3 / 5;
+  grid-row: 4 / 6;
+}
+.amcontent2img{
+  width: 100%;
+  height: auto;
+}
 
+.amcontent2Valhalla{
+  grid-column: 2 / 3;
+  grid-row: 4 / 6;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.amcontent2Valhalla2{
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-top: 2em;
+}
+.amcontent2Valhalla2{
+  grid-column: 5 / 6;
+  grid-row: 4 / 6;
+}
+.amcontent2Valhalla > h4{
+  font-size: 22px;
+  margin-bottom: 2px;
+  margin-top: 0px;
+}
+.amcontent2Valhalla, .amcontent2Valhalla2 > p{
+  color: whitesmoke;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/*Third picture, Careers all the way*/
+.amcontent3{
+  grid-column: 4 / 6;
+  grid-row: 6 / 8;
+}
+.amcontent3img{
+  width: 100%;
+  height: auto;
+}
+.amcontent3career{
+  grid-column: 3 / 4;
+  grid-row: 6 / 8;
+  align-items: center;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.careeritem{
+  flex: 1;
+}
+.careeritem > h4{
+  color: whitesmoke;
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+.careeritem > p{
+  color: whitesmoke;
+  line-height: 1.5;
+  font-size: 16px;
+  margin-top: 0px;
+  margin-bottom: 2px;
+}
+.careeritem > h3{
+  color: whitesmoke;
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 2px;
+}
 
 
 
@@ -307,10 +438,10 @@ button:hover:after {
 	bottom:0;
 	left:0;
 	position:fixed;
-    width: 100%;
-    height: 2em;
-    overflow:hidden;
-    margin:0 auto;
+  width: 100%;
+  height: 2em;
+  overflow:hidden;
+  margin:0 auto;
 	z-index:999;
 
   /*Fancy up and down transition*/
@@ -324,10 +455,10 @@ button:hover:after {
 /*Footer hover func*/
 .footer:hover {
 	-webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
 	height: 10em;
 }
 
@@ -335,7 +466,7 @@ button:hover:after {
 .footer #footercontainer{
 	margin-top:5px;
 	width:100%;
-height:100%;
+  height:100%;
   position:relative;
   top:0;
   left:0;
@@ -364,11 +495,9 @@ height:100%;
 	font-weight: 100;
 	margin-top:70px;
 	margin-left:40px;
-  flex: 1;
-
+  flex-wrap: wrap;
   color: whitesmoke;
 }
-
 #firefoximg{
   width: 2em;
   height: auto;
